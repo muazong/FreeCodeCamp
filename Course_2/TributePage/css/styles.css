@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+img {
+  display: block;
+}
+
+/* NOTE: CONTAINER */
+#container {
+  border-radius: 6px;
+  background-color: #eee;
+  margin: 30px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* NOTE: HEADER */
+#header {
+  text-align: center;
+  padding: 50px 0 18px;
+}
+
+#title {
+  color: #333;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+#desc {
+  color: #333;
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+/* NOTE: MAIN */
+#main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#img-div {
+  width: 96%;
+  height: auto;
+  padding: 12px;
+  margin: 0 12px;
+  background-color: #fff;
+}
+
+#image {
+  margin: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+#img-caption {
+  color: #333;
+  text-align: center;
+  padding: 2px 0;
+  margin-top: 12px;
+}
+
+#tribute-info {
+}
+
+/* NOTE: FOOTER */
+#footer {
+}
