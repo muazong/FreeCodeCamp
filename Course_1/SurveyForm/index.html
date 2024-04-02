@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <div class="header">
+        <h1 class="header__title">freeCodeCamp Survey Form</h1>
+        <p class="header__desc">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="content">
+        <form class="content__form">
+          <!-- Information -->
+          <div class="form__content form__info">
+            <label class="info__label info__label__name" for="name">
+              Name
+              <input
+                id="name"
+                class="info__input info__input__name"
+                type="text"
+                placeholder="Enter your name"
+                required
+              />
+            </label>
+
+            <label class="info__label info__label__email" for="email">
+              Email
+              <input
+                id="email"
+                class="info__input info__input__email"
+                type="email"
+                placeholder="Enter your email"
+                required
+              />
+            </label>
+
+            <label class="info__label info__label__age" for="age">
+              Age <span>(optional)</span>
+              <input
+                id="age"
+                class="info__input info__input__age"
+                type="number"
+                placeholder="Age"
+                required
+              />
+            </label>
+          </div>
+
+          <!-- Selection -->
+          <div class="form__content form__selection">
+            <div class="form__selection form__selection__role">
+              <label class="selection__label" for="selection__role">
+                Which option best describes your current role?
+                <select class="selection__role">
+                  <option selected value="" disabled>
+                    Select current role
+                  </option>
+                  <option value="student">Student</option>
+                  <option value="job">Full Time Job</option>
+                  <option value="learner">Full Time Learner</option>
+                  <option value="preferNo">Prefer not to say</option>
+                  <option value="other">Other</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="form__selection form__selection__recommend">
+              <p class="selection__recommend__title">
+                Would you recommend freeCodeCamp to a friend?
+              </p>
+              <label class="selection__label" for="definitely">
+                <input
+                  id="definitely"
+                  class="selection__radio"
+                  name="recommend"
+                  type="radio"
+                />
+                &nbsp;Definitely
+              </label>
+
+              <label class="selection__label" for="maybe">
+                <input
+                  id="maybe"
+                  class="selection__radio"
+                  name="recommend"
+                  type="radio"
+                />
+                &nbsp;Maybe
+              </label>
+
+              <label class="selection__label" for="notSure">
+                <input
+                  id="notSure"
+                  class="selection__radio"
+                  name="recommend"
+                  type="radio"
+                />
+                &nbsp;Not sure
+              </label>
+            </div>
+
+            <div class="form__selection form__selection__favorite">
+              <p class="selection__favorite__title">
+                What is your favorite feature of freeCodeCamp?
+                <select class="selection__favorite">
+                  <option selected value="" disabled>Select an option</option>
+                  <option value="challenges">Challenges</option>
+                  <option value="projects">Projects</option>
+                  <option value="community">Community</option>
+                  <option value="openSource">Open source</option>
+                </select>
+              </p>
+            </div>
+
+            <div class="form__selection form__selection__checkbox">
+              <p class="selection__checkbox__title">
+                What would you like to see improved?
+                <span>(Check all that apply) </span>
+              </p>
+
+              <label class="checkbox__label" for="feProjects">
+                <input
+                  id="feProjects"
+                  class="checkbox__input"
+                  type="checkbox"
+                />
+                &nbsp;Front-end Projects
+              </label>
+              <label class="checkbox__label" for="beProjects">
+                <input
+                  id="beProjects"
+                  class="checkbox__input"
+                  type="checkbox"
+                />
+                &nbsp;Back-end Projects
+              </label>
+              <label class="checkbox__label" for="data">
+                <input id="data" class="checkbox__input" type="checkbox" />
+                &nbsp;Data Visualization
+              </label>
+              <label class="checkbox__label" for="challenges">
+                <input
+                  id="challenges"
+                  class="checkbox__input"
+                  type="checkbox"
+                />
+                &nbsp;Challenges
+              </label>
+              <label class="checkbox__label" for="opensource">
+                <input
+                  id="opensource"
+                  class="checkbox__input"
+                  type="checkbox"
+                />
+                &nbsp;Open Source Community
+              </label>
+              <label class="checkbox__label" for="gitter">
+                <input id="gitter" class="checkbox__input" type="checkbox" />
+                &nbsp;Gitter help rooms
+              </label>
+              <label class="checkbox__label" for="videos">
+                <input id="videos" class="checkbox__input" type="checkbox" />
+                &nbsp;Videos
+              </label>
+              <label class="checkbox__label" for="meetups">
+                <input id="meetups" class="checkbox__input" type="checkbox" />
+                &nbsp;City Meetups
+              </label>
+              <label class="checkbox__label" for="wiki">
+                <input id="wiki" class="checkbox__input" type="checkbox" />
+                &nbsp;Wiki
+              </label>
+              <label class="checkbox__label" for="forum">
+                <input id="forum" class="checkbox__input" type="checkbox" />
+                &nbsp;Forum
+              </label>
+              <label class="checkbox__label" for="addition">
+                <input id="addition" class="checkbox__input" type="checkbox" />
+                &nbsp;Additional Courses
+              </label>
+            </div>
+          </div>
+
+          <div class="form__content form__comment">
+            <p class="form__comment__title">Any comments or suggestions?</p>
+            <textarea
+              class="comment__text"
+              placeholder="Enter yourcomment here"
+            ></textarea>
+          </div>
+
+          <!-- Button -->
+          <div class="form__content">
+            <button class="form__btn" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>

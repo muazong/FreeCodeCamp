@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  color: #1b1b32;
+  background: #f5f6f7;
+  font-family: Helvetica;
+}
+
+/* NOTE: HEADER */
+header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: #1b1b32;
+  justify-content: space-between;
+}
+
+#logo {
+  padding: 0.4rem;
+  aspect-ratio: 35 / 4;
+  width: max(100px, 18vw);
+  background-color: #0a0a23;
+}
+
+h1 {
+  color: #f1be32;
+  text-align: center;
+  font-size: min(5vw, 1.2em);
+}
+
+h2 {
+  margin-top: 0;
+  padding-top: 60px;
+  border-bottom: 4px solid #dfdfe2;
+}
+
+h1,
+h2 {
+  font-family: Verdana, sans-serif;
+}
+
+nav > ul {
+  height: 100%;
+  margin-block: 0;
+  padding-inline-start: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav > ul > li {
+  display: block;
+  color: #dfdfe2;
+  padding: 0.2rem;
+  margin: 0 0.2rem;
+}
+
+nav > ul > li:hover {
+  color: #1b1b32;
+  cursor: pointer;
+  background-color: #dfdfe2;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* NOTE: CONTENT */
+main {
+  padding-top: 25px;
+}
+
+section {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 10px;
+}
+
+/* Section 1 */
+input {
+  font-size: 16px;
+}
+
+.sr-only {
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+}
+
+.info {
+  padding: 10px 0 0 5px;
+}
+
+.info > label {
+  width: 10%;
+  min-width: 55px;
+  text-align: right;
+}
+
+.info > input {
+  width: 50%;
+  text-align: left;
+}
+
+.info > label,
+.info > input {
+  display: inline-block;
+}
+
+/* Section 2 */
+.question-block {
+  width: 100%;
+  display: block;
+  text-align: left;
+  margin-top: 20px;
+  padding-top: 5px;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 5px;
+  padding-left: 15px;
+}
+
+p::before {
+  content: "Question #";
+}
+
+.question {
+  border: none;
+  padding-bottom: 0;
+}
+
+.answers-list {
+  padding: 0;
+  list-style: none;
+}
+
+/* Section 3 */
+.formrow {
+  margin-top: 30px;
+  padding: 0 15px;
+}
+
+button {
+  display: block;
+  margin: 40px auto;
+  width: 40%;
+  padding: 15px;
+  font-size: 23px;
+  background: #d0d0d5;
+  border: 3px solid #3b3b4f;
+}
+
+/* NOTE: FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #2a2a40;
+}
+
+footer,
+footer a {
+  color: #dfdfe2;
+}
+
+address {
+  text-align: center;
+  padding: 0.3em;
+}
+
+/* NOTE: Media Query */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
